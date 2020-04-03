@@ -32,5 +32,6 @@
     'demo': [
         'demo/demo.xml',
         'views/openacademy.xml',
+        'views/partner.xml'
     ],
 }
