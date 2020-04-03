@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="coopplanning.list">
+      <field name="name">coopplanning list</field>
+      <field name="model">coopplanning.coopplanning</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="coopplanning.action_window">
+      <field name="name">coopplanning window</field>
+      <field name="res_model">coopplanning.coopplanning</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="coopplanning.action_server">
+      <field name="name">coopplanning server</field>
+      <field name="model_id" ref="model_coopplanning_coopplanning"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="coopplanning" id="coopplanning.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="coopplanning.menu_1" parent="coopplanning.menu_root"/>
+    <menuitem name="Menu 2" id="coopplanning.menu_2" parent="coopplanning.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="coopplanning.menu_1_list" parent="coopplanning.menu_1"
+              action="coopplanning.action_window"/>
+    <menuitem name="Server to list" id="coopplanning" parent="coopplanning.menu_2"
+              action="coopplanning.action_server"/>
+-->
+  </data>
+</odoo>
